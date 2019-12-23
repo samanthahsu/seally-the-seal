@@ -1,0 +1,21 @@
+{
+  "name": "seally-the-seal",
+  "version": "1.0.0",
+  "description": "animated desktop companion + dad jokes",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . seally-the-seal --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"seally-the-seal\"",    
+    "package-linux": "electron-packager . seally-the-seal --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
+  },
+  "author": "Samantha Hsu",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^7.1.7",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.1.1"
+  }
+}

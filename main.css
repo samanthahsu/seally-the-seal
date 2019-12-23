@@ -1,0 +1,22 @@
+#seal {
+    height: 125px;
+    width: 167px;
+
+    grid-row: 1;
+    grid-column: 1;
+
+    background: url("./img/new-map-v1.png");
+}
+
+#drag-area {
+    -webkit-app-region: drag;
+    height: 60;
+    width: 25;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+body {
+    display: grid;
+    place-items: center center;
+}
